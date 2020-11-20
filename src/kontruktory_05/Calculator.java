@@ -17,7 +17,7 @@ public class Calculator {
         return result;
     }
 
-    private void saveOperation(String operacja) {
+    protected void saveOperation(String operacja) {
         this.operacje = Arrays.copyOf(operacje, operacje.length+1);
         operacje[operacje.length-1] = operacja;
     }
